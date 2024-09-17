@@ -32,7 +32,7 @@ body {
     font-family: "Nunito", sans-serif;
 }
 .container {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@ header .banner:hover {
 }
 
 header .logo img {
-    width: 12rem;
+    width: 7rem;
 }
 
 header .area {
@@ -142,7 +142,7 @@ header nav a {
     text-decoration: none;
     color: inherit; 
     padding-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 header nav a:hover {
     color: var(--background-secondary);
@@ -161,6 +161,41 @@ header nav a::after {
 header nav a:hover::after {
     width: 100%;
 }
+header .search input { 
+    border: none;
+    background-color: var(--text-primary);
+    border-radius: 0.6rem;
+    padding: 1rem 3rem;
+}
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 22rem;
+}
+
+.search input[type="search"] {
+    width: 100%;
+}
+
+.search i.bi-search {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    color: #888;
+    font-size: 1.5rem;
+}
+.promo {
+    color: var(--btn-secondary-hover);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
 
 @media (width > 900px) {
     header .menu-opener {
@@ -180,5 +215,12 @@ header nav a:hover::after {
     header nav ul {
         flex-direction: row;
         padding-bottom: 0;
+    }
+    header .search {
+        margin-left: 15rem;
+        width: 40rem;
+    }
+    header .search input {
+        width: 100%;
     }
 }
