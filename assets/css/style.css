@@ -219,7 +219,12 @@ ul li:hover ul.dropdown {
 
 /* icons */
 .icons {
-    display: flex;
+    margin: 1rem 5rem;
+}
+.icons i {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: var(--text-primary);
 }
 
 
