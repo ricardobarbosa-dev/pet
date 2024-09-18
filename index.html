@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Título Qualquer</title>
 </head>
@@ -90,10 +91,60 @@
     <!-- hero -->
     <div class="container">
         <section class="hero">
-            
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/foto_01.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/foto_02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/foto_03.png" alt="">
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <div class="swiper-scrollbar"></div>
+            </div>
         </section>
-     </div>
+    </div>
+
 
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // Autoplay
+    autoplay: {
+        delay: 3000, // Tempo em milissegundos antes de passar para o próximo slide
+        disableOnInteraction: false, // Não desabilita o autoplay após a interação do usuário
+    },
+
+    // Navigation
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+    },
+});
+
+    </script>
+
 </body>
 </html> 

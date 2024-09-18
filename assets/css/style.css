@@ -235,6 +235,9 @@ ul li:hover ul.dropdown {
 /* buttons */
 .btn {
     margin-left: 3rem;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 .btn button {
     background: var(--background-secondary);
@@ -253,7 +256,25 @@ ul li:hover ul.dropdown {
 }
 
 
+.hero {
+    position: relative;
+    overflow: hidden;
+}
 
+.swiper {
+    max-width: 80vw;
+    height: 100vh;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
 
 
 

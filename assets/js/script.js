@@ -13,3 +13,5 @@ menuOpener.addEventListener('click', () => {
         menuOpener.querySelector('.hamburger-icon').style.display = 'none';
     }
 });
+
+
