@@ -61,6 +61,7 @@ header .banner:hover {
 
 header .logo img {
     width: 7rem;
+    margin-top: -2rem;
 }
 
 header .area {
@@ -81,6 +82,7 @@ header .hamburger-icon {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: -15px;
 }
 
 header .hamburger-icon span {
@@ -96,6 +98,7 @@ header .close-icon {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    margin-top: -15px;
 }
 
 header .close-icon span {
@@ -171,7 +174,7 @@ header .search input {
     position: relative;
     display: flex;
     align-items: center;
-    width: 22rem;
+    margin: 2rem 0;
 }
 
 .search input[type="search"] {
@@ -226,7 +229,28 @@ ul li:hover ul.dropdown {
     margin: 0 1rem;
     color: var(--text-primary);
 }
-
+.icons i:hover {
+    color: var(--btn-secondary-hover);
+}
+/* buttons */
+.btn {
+    margin-left: 3rem;
+}
+.btn button {
+    background: var(--background-secondary);
+    color: var(--text-primary);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn button:hover {
+    background-color: var(--btn-primary-hover);
+}
+.btn-desktop {
+    display: none;
+}
 
 
 
@@ -241,17 +265,17 @@ ul li:hover ul.dropdown {
     header .menu-opener {
         display: none;
     }
-
+    header .logo img {
+        margin-top: 0;
+    }
     header .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     header nav {
         max-height: 100vh;
     }
-
     header nav ul {
         flex-direction: row;
         padding-bottom: 0;
@@ -271,5 +295,31 @@ ul li:hover ul.dropdown {
     }
     .search {
         margin-top: 0;
+    }
+    .icons {
+        display: flex;
+        align-self: center;
+    }
+    /* buttons */
+    .btn {
+        display: none;
+    }
+
+    /* buttons */
+    .btn-desktop {
+        display: flex;
+    }
+    .btn-desktop button {
+        background: var(--background-secondary);
+        color: var(--text-primary);
+        border: none;
+        border-radius: 0.6rem;
+        padding: 1rem 2rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .btn-desktop button:hover {
+        background-color: var(--btn-primary-hover);
     }
 }
