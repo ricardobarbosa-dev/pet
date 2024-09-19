@@ -41,7 +41,6 @@ header {
     position: sticky;
     inset: 0 0 auto 0;
     z-index: 10;
-    box-shadow: 0 0 5px #CCC;
     background-color: var(--background-primary);
 }
 
@@ -255,15 +254,16 @@ ul li:hover ul.dropdown {
     display: none;
 }
 
-
+ 
 .hero {
     position: relative;
     overflow: hidden;
+    padding: 4rem 0;
 }
 
 .swiper {
-    max-width: 80vw;
-    height: 100vh;
+    max-width: 60vw;
+    max-height: 50vh;
 }
 .swiper-slide {
     display: flex;
