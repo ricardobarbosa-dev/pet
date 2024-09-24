@@ -31,7 +31,7 @@ a {
 }
 body {
     font-family: "Nunito", sans-serif;
-    background-color: var(--background);
+    background-color: var(--background); 
 }
 .container {
     max-width: 1440px;
@@ -301,8 +301,26 @@ section.category h2 {
     background-size: cover;
 }
 
-
-
+section.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 20rem;
+    gap: 5rem;
+}
+section.info h2 {
+    color: var(--background-primary);
+    font-size: 2rem;
+}
+section.info p {
+    font-size: 1.7rem;
+    color: var(--text-secondary);
+    
+}
+.grid {
+    max-width: 30rem;
+}
 
 
 
