@@ -307,7 +307,7 @@ section.info {
     align-items: center;
     background-color: #fff;
     height: 20rem;
-    gap: 5rem;
+    gap: 30rem;
 }
 section.info h2 {
     color: var(--background-primary);
@@ -318,11 +318,16 @@ section.info p {
     color: var(--text-secondary);
     
 }
-.grid {
-    max-width: 30rem;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 40rem;
 }
-
-
+.box span img {
+    width: 5rem;
+}
 
 
 @media (width > 900px) {
