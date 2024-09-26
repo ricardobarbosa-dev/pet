@@ -302,11 +302,10 @@ section.category h2 {
 }
 
 section.info {
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    height: 20rem;
+    height: 50rem;
     gap: 30rem;
 }
 section.info h2 {
@@ -327,6 +326,7 @@ section.info p {
 }
 .box span img {
     width: 5rem;
+    padding-top: 5rem;
 }
 
 
@@ -403,5 +403,11 @@ section.info p {
     /* main */
     main {
         width: 1280px;
+    }
+
+    /*  */
+    section.info {
+        display: flex;
+        height: 20rem;
     }
 }
