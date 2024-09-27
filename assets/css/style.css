@@ -308,10 +308,27 @@ section.products h2 {
 .product-info p.price {
     font-size: 3rem;
     font-weight: bold;
+    margin-top: 3rem;
 }
 .product-info p.price span {
     font-size: 1.5rem;
 }
+.product-kg span {
+    border: 1px solid #21252925;
+    border-radius: 1rem; 
+    padding: 0.5rem 1rem;
+    display: inline-block; 
+    margin: 0.5rem; 
+    font-size: 1.3rem;
+    transition: background-color 0.3s;
+}
+
+.product-kg span:hover {
+    background-color: var(--btn-primary-hover); 
+    cursor: pointer; 
+    color: var(--text-primary);
+}
+
 .product-info button.btn-buy {
     background-color: var(--background);
     border: 1px solid var(--btn-primary);
@@ -320,7 +337,7 @@ section.products h2 {
     color: var(--text-secondary);
     font-weight: 500;
     font-size: 1.5rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
     cursor: pointer;
 }
 .product-info button.btn-buy a {
