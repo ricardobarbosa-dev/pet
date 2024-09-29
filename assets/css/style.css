@@ -29,9 +29,7 @@ a {
     text-decoration: none;
 }
 
-.container { 
-    max-width: 1440px;
-}
+ 
 body {
     background-color: var(--background-primary);
 }
@@ -124,25 +122,64 @@ header nav ul {
     padding-bottom: 2rem;
 }
 header nav li {
-    padding: 1rem 2rem;
+    padding: 1.1rem 2rem;
 }
 header nav a {
     color: var(--text-secondary);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 header nav a:hover {
     opacity: 0.8;
 }
 
+/* icons */
+.icons {
+    display: flex;
+}
+.icons i {
+    font-size: 1.7rem;
+    color: var(--text-primary);
+    cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
+/* hero */
+section.hero {
+    display: flex;
+}
+section.hero .hero-img img {
+    width: 100vw;
+    height: auto;
+}
+/* advantages */
+section.advantages {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1rem;
+    padding: 5rem 1rem;
+}
+section.advantages .advantages-box {
+    background-color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 0.6rem;
+}
+section.advantages .advantages-box h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    gap: 1rem;
+}
+section.advantages .advantages-box h2 i {
+    font-size: 2.3rem;    
+}
+section.advantages .advantages-box p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+}
 
 
 
@@ -155,7 +192,7 @@ header nav a:hover {
     }
     header .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     header nav { 
@@ -164,5 +201,13 @@ header nav a:hover {
     header nav ul {
         flex-direction: row;
         padding-bottom: 0;
+    }
+    section.advantages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.advantages .advantages-box {
+        width: 30rem;
     }
 }
