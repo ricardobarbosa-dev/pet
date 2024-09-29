@@ -8,6 +8,15 @@
 
 /* palette colors */
 :root {
+
+    --background-primary: #f7f7f7;
+    --background-secondary: #012256;
+    --text-primary: #121111;
+    --text-secondary: #012256;
+    --text-3: #31ad3e;
+    --background-border: #febd0f;
+    --background-button: #001f59;
+
     --background-primary: #043873; 
     --background-secondary: #4f9cf9;
     --background: #fff;
