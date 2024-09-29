@@ -151,6 +151,7 @@ section.hero .hero-img img {
     width: 100vw;
     height: auto;
 }
+
 /* advantages */
 section.advantages {
     display: grid;
@@ -181,9 +182,29 @@ section.advantages .advantages-box p {
     text-align: center;
 }
 
-
-
-
+/* categories */
+section.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 1rem;
+    padding: 5rem 1rem;
+    background-color: #fff;
+}
+section.categories .categories-box h3 {
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--text-secondary);
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+section.categories .categories-box img {
+    cursor: pointer;
+    border-radius: 6rem;
+}
+section.categories .categories-box img:hover {
+    opacity: 0.8;
+}
 
 /* break points */
 @media (width > 900px) {
@@ -209,5 +230,11 @@ section.advantages .advantages-box p {
     }
     section.advantages .advantages-box {
         width: 30rem;
+    }
+    section.categories {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
     }
 }
