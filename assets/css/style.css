@@ -206,6 +206,44 @@ section.categories .categories-box img:hover {
     opacity: 0.8;
 }
 
+/* best-sellers */
+section.best-sellers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+section.best-sellers h2 {
+    font-size: 1.7rem;
+    color: var(--text-secondary);
+    font-family: 'Poppins', sans-serif;
+}
+section.best-sellers .more-products a button {
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: var(--background-border);
+    color: var(--text-secondary);
+    font-weight: bold;
+    border-radius: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* break points */
 @media (width > 900px) {
     header .menu-opener {
