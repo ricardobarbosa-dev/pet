@@ -252,6 +252,7 @@ section.products .product {
     align-items: center; 
     padding: 3rem;
     width: 30rem;
+    height: 50rem;
     margin: 1rem;
 }
 
@@ -279,7 +280,15 @@ section.products p {
 section.products a:hover {
     opacity: 0.8;
 }
-
+section.products a button {
+    background-color: var(--background-border);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.6rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 
