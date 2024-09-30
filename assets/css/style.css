@@ -152,7 +152,7 @@ section.hero {
     display: flex;
 }
 section.hero .hero-img img {
-    width: 100vw;
+    width: 99vw;
     height: auto;
 }
 
@@ -219,7 +219,7 @@ section.best-sellers {
     padding: 2rem 0;
 }
 section.best-sellers h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: var(--text-secondary);
     font-family: 'Poppins', sans-serif;
 }
@@ -240,30 +240,46 @@ section.best-sellers .more-products a button:hover {
 /* products */
 section.products {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
 }
-section.products .product-img {
+
+section.products .product {
     border: 1px solid #21252925;
     display: flex;
+    flex-direction: column; 
+    align-items: center; 
     padding: 3rem;
     width: 30rem;
-    margin-bottom: 2rem;
+    margin: 1rem;
 }
+
+section.products .product-img {
+    max-width: 100%;
+    height: auto; 
+    margin-bottom: 1rem; 
+}
+
 section.products h3 {
     text-align: center;
     color: var(--text-secondary);
     font-size: 1.5rem;
     max-width: 30rem;
+    font-weight: 500;
 }
+
 section.products p {
-    padding: 1rem 8rem;
-    font-size: 1.6rem;
+    padding: 2rem 1rem; 
+    font-size: 2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color: var(--text-primary);
 }
+section.products a:hover {
+    opacity: 0.8;
+}
+
 
 
 
@@ -304,5 +320,5 @@ section.products p {
         justify-content: center;
         align-items: center;
         gap: 10rem;
-    }
+    }    
 }
