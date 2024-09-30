@@ -29,6 +29,9 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
  
 body {
     background-color: var(--background-primary);
@@ -128,6 +131,7 @@ header nav a {
     color: var(--text-secondary);
     font-size: 1.5rem;
     font-weight: bold;
+    transition: .5s;
 }
 header nav a:hover {
     opacity: 0.8;
@@ -201,6 +205,7 @@ section.categories .categories-box h3 {
 section.categories .categories-box img {
     cursor: pointer;
     border-radius: 6rem;
+    transition: .5s;
 }
 section.categories .categories-box img:hover {
     opacity: 0.8;
@@ -227,13 +232,38 @@ section.best-sellers .more-products a button {
     font-weight: bold;
     border-radius: 0.6rem;
 }
+section.best-sellers .more-products a button:hover {
+    opacity: 0.8;
+    transition: .5s;
+}
 
-
-
-
-
-
-
+/* products */
+section.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.products .product-img {
+    border: 1px solid #21252925;
+    display: flex;
+    padding: 3rem;
+    width: 30rem;
+    margin-bottom: 2rem;
+}
+section.products h3 {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    max-width: 30rem;
+}
+section.products p {
+    padding: 1rem 8rem;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: var(--text-primary);
+}
 
 
 
