@@ -295,12 +295,12 @@ section.products a button {
 /* banner dog and cat */
 section.dog-cat a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 2rem 0;
 }
 section.dog-cat img {
-    width: 50%;
+    width: 80%;
     align-items: center;
     border-radius: 0.6rem;
 }
