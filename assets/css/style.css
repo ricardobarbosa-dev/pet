@@ -292,18 +292,19 @@ section.products a button {
 }
 
 /* banner dog and cat */
-section.dog-cat a {
+.dog-cat {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 2rem 0;
+    padding: 4rem 4rem;
 }
-section.dog-cat img {
-    width: 80%;
-    align-items: center;
+.dog-cat img {
+    margin-bottom: 2rem;
+    width: 100%;
     border-radius: 0.6rem;
 }
-section.dog-cat img:hover {
+.dog-cat img:hover {
     opacity: 0.8;
 }
 
@@ -411,20 +412,13 @@ h3 {
     section.best-sellers h2 {
         font-size: 3rem;
     }
-    section.dog-cat a {
-        flex-direction: row;
-    }
-    section.dog-cat img {
-        width: 60rem;
-        align-items: center;
-    }
-    section.dog-cat {
+    .dog-cat img {
         display: flex;
-        align-items: center;
         justify-content: center;
-        gap: 6rem;
+        align-items: center;
+        padding: 2rem;
+        width: 100%;
+        border-radius: 3rem;
     }
-    .info-footer {
-        margin: 5rem;
-    }
+    
 }
