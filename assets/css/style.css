@@ -242,6 +242,7 @@ section.best-sellers .more-products a button:hover {
 /* products */
 section.products {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: center; 
 }
 
