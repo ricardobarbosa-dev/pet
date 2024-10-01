@@ -45,6 +45,7 @@ header {
     box-shadow: 0 0 2px #ccc;
     background-color: var(--background-primary);
     font-family: 'Poppins', sans-serif;
+    max-width: 100vw;
 }
 header .banner {
     display: block;
@@ -147,14 +148,24 @@ header nav a:hover {
     cursor: pointer;
 }
 
-/* hero */
+/* Hero */
 section.hero {
     display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color: #f0f0f0;
 }
+
+section.hero .hero-img {
+    max-width: 100%;
+}
+
 section.hero .hero-img img {
-    width: 96vw;
-    height: auto;
+    max-width: 100%;  
+    height: auto;     
+    display: block; 
 }
+
 
 /* advantages */
 section.advantages {
