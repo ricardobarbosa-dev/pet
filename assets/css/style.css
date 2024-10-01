@@ -36,7 +36,9 @@ h1, h2, h3, h4 {
 body {
     background-color: var(--background-primary);
 }
-
+.container {
+    width: 100%;
+}
 /* header */
 header {
     position: sticky;
@@ -152,7 +154,7 @@ section.hero {
     display: flex;
 }
 section.hero .hero-img img {
-    width: 96vw;
+    width: 99vw;
     height: auto;
 }
 
