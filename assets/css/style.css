@@ -306,9 +306,29 @@ section.dog-cat img:hover {
     opacity: 0.8;
 }
 
-
-
-
+/* footer */
+section.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-secondary);
+    padding: 4rem 4rem;
+}
+section.footer .logo-footer img {
+    width: 12rem;
+    margin-bottom: 2rem;
+}
+section.footer p {
+    color: var(--text-fourth);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+}
+section.footer h3 {
+    color: var(--text-fourth);
+    margin-bottom: 1rem;
+}
+section.footer .payment-methods img {
+    max-width: 100vw;
+}
 
 
 
