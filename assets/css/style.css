@@ -307,28 +307,72 @@ section.dog-cat img:hover {
 }
 
 /* footer */
-section.footer {
-    display: flex;
-    flex-direction: column;
+.footer {
     background-color: var(--background-secondary);
-    padding: 4rem 4rem;
+    padding: 2rem;
+    text-align: center;
 }
-section.footer .logo-footer img {
-    width: 12rem;
+.logo-footer img {
+    max-width: 15rem;
+    height: auto;
     margin-bottom: 2rem;
 }
-section.footer p {
+
+.footer p {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3rem;
+    max-width: 50rem;
     color: var(--text-fourth);
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 2rem;
 }
-section.footer h3 {
+h3 {
+    margin: 2rem 0 1rem;
+    font-size: 1.7rem;
     color: var(--text-fourth);
-    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
-section.footer .payment-methods img {
-    max-width: 100vw;
+.payment-methods img {
+    max-width: 5rem;
+    height: auto;
+    margin: 0 1rem;
 }
+.footer-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info-footer {
+    margin: 2rem;
+}
+.info-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-footer li {
+    margin: 0.5rem 0;
+}
+.info-footer a {
+    text-decoration: none;
+    color: var(--text-fourth); 
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+.info-footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -378,5 +422,8 @@ section.footer .payment-methods img {
         align-items: center;
         justify-content: center;
         gap: 6rem;
+    }
+    .info-footer {
+        margin: 5rem;
     }
 }
