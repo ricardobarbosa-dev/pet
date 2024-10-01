@@ -152,7 +152,7 @@ section.hero {
     display: flex;
 }
 section.hero .hero-img img {
-    width: 99vw;
+    width: 96vw;
     height: auto;
 }
 
@@ -219,7 +219,7 @@ section.best-sellers {
     padding: 2rem 0;
 }
 section.best-sellers h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--text-secondary);
     font-family: 'Poppins', sans-serif;
 }
@@ -290,8 +290,21 @@ section.products a button {
     cursor: pointer;
 }
 
-
-
+/* banner dog and cat */
+section.dog-cat a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+section.dog-cat img {
+    width: 80%;
+    align-items: center;
+    border-radius: 0.6rem;
+}
+section.dog-cat img:hover {
+    opacity: 0.8;
+}
 
 
 
@@ -330,4 +343,17 @@ section.products a button {
         align-items: center;
         gap: 10rem;
     }    
+    section.dog-cat a {
+        flex-direction: row;
+    }
+    section.dog-cat img {
+        width: 60rem;
+        align-items: center;
+    }
+    section.dog-cat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6rem;
+    }
 }
