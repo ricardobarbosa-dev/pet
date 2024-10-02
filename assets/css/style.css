@@ -56,9 +56,13 @@ header .banner {
     color: var(--text-fourth);
     text-decoration: none;
     font-size: 1.3rem;
+    font-weight: bold;
 }
 header .banner:hover {
     background-color: var(--background-button);
+}
+header .banner span {
+    color: var(--background-border);
 }
 header .logo img {
     width: 12rem;
@@ -154,7 +158,7 @@ section.hero {
     display: flex;
 }
 section.hero .hero-img img {
-    width: 99vw;
+    width: 100%;
     height: auto;
 }
 
@@ -366,5 +370,8 @@ section.products a button {
         width: 100%;
         border-radius: 3rem;
     }
-    
+    section.hero .hero-img img {
+        width: 99vw;
+        height: auto;
+    }
 }
