@@ -313,14 +313,47 @@ section.products a button {
 }
 
 /* footer */
+section.footer {
+    background-color: var(--background-primary);
+}
+section.footer .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+section.footer > h3 {
+    font-weight: 500;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
 
-
-
-
-
-
-
-
+.category-footer {
+    background-color: var(--background-secondary);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    text-align: center;
+    gap: 3rem;
+}
+section.footer li {
+    margin-bottom: 0.5rem;
+}
+section.footer ul h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-fourth);
+    margin-bottom: 1.3rem;
+}
+section.footer a {
+    color: var(--text-fourth);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+}
+section.footer a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -373,5 +406,16 @@ section.products a button {
     section.hero .hero-img img {
         width: 99vw;
         height: auto;
+    }
+    section.footer > h3 {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 36%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+    .category-footer {
+        flex-direction: row;
+        gap: 40rem;
     }
 }
