@@ -320,7 +320,7 @@ section.footer .logo-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 section.footer > h3 {
     font-weight: 500;
@@ -354,7 +354,17 @@ section.footer a {
 section.footer a:hover {
     text-decoration: underline;
 }
-
+.copy {
+    background-color: var(--text-fourth);
+    padding: 2rem 2rem;
+}
+.copy p {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
 
 
 
