@@ -586,7 +586,7 @@ section.footer a:hover {
     }
     .category-footer {
         flex-direction: row;
-        gap: 40rem;
+        gap: 20rem;
     }
     .brands .icons {
         display: grid;
