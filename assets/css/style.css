@@ -312,6 +312,31 @@ section.products a button {
     opacity: 0.8;
 }
 
+/* brands */
+.brands {
+    background-color: var(--bg-foreground);
+    color: var(--text-primary);
+}
+
+.brands .container {
+    max-width: 60rem;
+}
+
+.brands .quote {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 5rem;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.brands .icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
 /* footer */
 section.footer {
     background-color: var(--background-primary);
