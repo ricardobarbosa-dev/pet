@@ -39,6 +39,31 @@ body {
 .container {
     width: 100%;
 }
+/* button-top */
+/* button top site */
+.button-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--background-button);
+    text-decoration: none;
+    border-radius: 40px;
+}
+.button-top::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: margin-top 250ms;
+}
+.button-top:hover::after {
+    margin-top:-8px;
+}
 /* header */
 header {
     position: sticky;
@@ -318,23 +343,81 @@ section.products a button {
     color: var(--text-primary);
 }
 
-.brands .container {
-    max-width: 60rem;
-}
-
 .brands .quote {
     font-weight: bold;
     font-size: 3rem;
     line-height: 5rem;
-    padding: 6rem 2rem;
     text-align: center;
 }
 
 .brands .icons {
+    margin-bottom: 5rem;
+    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-left: 2rem;
+}
+
+/* FAQ */
+.faq {
+    margin-top: 6rem;
+    padding: 0 3rem;
+}
+
+.faq h2 {
+    font-family: var(--font-hero);
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins',sans-serif;
+    color: var(--text-secondary);
+}
+
+.faq .accordion .faq_item {
+    border-bottom: 1px solid var(--text-secondary);
+}
+
+.faq .accordion .faq_item:last-child {
+    border-bottom: 0;
+}
+
+.faq .accordion .faq_item .faq_title {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
-    padding: 3rem 2rem;
-    margin: auto;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.faq_title p {
+    font-family: 'Poppins',sans-serif;
+}
+.faq .accordion .faq_item .faq_title img {
+    transition: all ease .5s;
+}
+
+.faq .accordion .faq_item .faq_body {
+    line-height: 2.5rem;
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all ease .5s;
+}
+
+.faq .accordion .faq_item .faq_body p {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq .accordion .faq_item.opened .faq_body {
+    max-height: 100vh;
+}
+
+.faq .accordion .faq_item.opened .faq_title img {
+    transform: rotate(180deg);
 }
 
 /* footer */
@@ -363,7 +446,7 @@ section.footer > h3 {
     gap: 3rem;
 }
 section.footer li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 section.footer ul h3 {
     font-size: 1.5rem;
@@ -426,7 +509,10 @@ section.footer a:hover {
         justify-content: center;
         align-items: center;
         gap: 5rem;
-    }    
+    } 
+    section.best-sellers {
+        gap: 30rem;
+    }   
     section.best-sellers h2 {
         font-size: 3rem;
     }
@@ -452,5 +538,22 @@ section.footer a:hover {
     .category-footer {
         flex-direction: row;
         gap: 40rem;
+    }
+    .brands .icons {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0rem;
+        margin: auto;
+        margin-bottom: 10rem;
+        border-radius: 1rem;
+        gap: 3rem;
+    }
+    .faq {
+        margin-top: 6rem;
+        padding: 0 35rem;
+    }
+    section.footer li {
+        margin-bottom: 1rem;
+        display: flex;
     }
 }

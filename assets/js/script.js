@@ -1,17 +1,21 @@
 // brands
 let brands =
     [
-        { quote: '"Mais do que nunca, os animais de estimação são tratados como membros da família."', origin: 'cbs.svg' },
-        { quote: '"DogDev é um ótimo serviço para seus Pets."', origin: 'forbes.svg' },
-        { quote: '"DogDev usa ingredientes simples e limpos em seus pratos."', origin: 'fox.svg' },
-        { quote: '"DogDev é um ótimo serviço para seus Pets."', origin: 'sharktank.svg' }
+        { quote: '', origin: 'Formula-Natural.webp' },
+        { quote: '', origin: 'Golden.webp' },
+        { quote: '', origin: 'Magnus.webp' },
+        { quote: '', origin: 'Nutrive.webp' },
+        { quote: '', origin: 'Origens.webp' },
+        { quote: '', origin: 'Premier.webp' },
+        { quote: '', origin: 'Special-Dog.webp' },
+        { quote: '', origin: 'Unna.webp' }
     ];
 let brandQuote = document.querySelector('.brands .quote');
 let brandIcons = document.querySelector('.brands .icons');
 
 for (let tindex in brands) {
     let img = document.createElement('img');
-    img.setAttribute('src', './assets/images/' + brands[parseInt(tindex)].origin);
+    img.setAttribute('src', './assets/images/marcas/' + brands[parseInt(tindex)].origin);
     img.style.cursor = 'pointer';
     img.addEventListener('click', () => fillbrand(parseInt(tindex)));
     brandIcons.appendChild(img);
@@ -56,4 +60,56 @@ const setFaq = (index) => {
         item.classList.remove('opened');
     }
     faqItems[currentFaq].classList.add('opened');
-}
+};
+
+// Scroll Reveal
+ScrollReveal().reveal('.hero', {
+    origin: 'top',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('.advantages', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+ScrollReveal().reveal('.categories', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('.best-sellers', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('.products', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('.dog-cat', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+
+ScrollReveal().reveal('.brands', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+ScrollReveal().reveal('.faq', {
+    origin: 'left',
+    duration: 2000,
+    distance: '20%'
+});
+ScrollReveal().reveal('.footer', {
+    origin: 'bottom',
+    duration: 2000,
+    distance: '20%'
+});
