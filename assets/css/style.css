@@ -168,6 +168,21 @@ header nav a:hover {
     opacity: 0.8;
 }
 
+/* submenu */
+ul li ul.submenu li {
+    display: block;
+}
+ul li ul.submenu {
+    width: 15rem;
+    background-color: var(--background-primary);
+    position: absolute;
+    z-index: 11;
+    display: none;
+}
+
+ul li:hover ul.submenu {
+    display: block;
+}
 /* icons */
 .icons {
     display: flex;
