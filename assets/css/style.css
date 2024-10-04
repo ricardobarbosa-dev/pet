@@ -435,6 +435,40 @@ section.products a button {
     transform: rotate(180deg);
 }
 
+section.have-questions {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background-color: var(--text-primary);
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+section.have-questions .question-icon i {
+    color: var(--text-primary);
+    font-size: 2rem;
+    background-color: var(--background-primary);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+section.have-questions h3 {
+    color: var(--text-fourth);
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+section.have-questions button {
+    border: none;
+    border-radius: 0.6rem;
+    padding: 1rem 2rem;
+    background-color: var(--background-primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+
+
 /* footer */
 section.footer {
     background-color: var(--background-primary);
@@ -555,13 +589,14 @@ section.footer a:hover {
         gap: 40rem;
     }
     .brands .icons {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
         padding: 3rem 0rem;
         margin: auto;
         margin-bottom: 10rem;
         border-radius: 1rem;
-        gap: 3rem;
+        gap: 10rem;
+        max-width: 100rem;
     }
     .faq {
         margin-top: 6rem;
@@ -572,3 +607,4 @@ section.footer a:hover {
         display: flex;
     }
 }
+
