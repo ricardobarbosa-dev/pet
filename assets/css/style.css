@@ -614,7 +614,7 @@ section.footer a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10rem;
+        width: 50rem;
     }
     section.have-questions h3 {
         font-size: 2rem;
