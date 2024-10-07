@@ -52,7 +52,18 @@
                         <li><a href="#">Farmácia</a></li>
                         <li><a href="#">Adote um Pet</a></li>
                     <div class="icons">
-                        <li><a href="#"><i class="bi bi-search"></i></a></li>
+                        <li><a href="#" id="searchIcon"><i class="bi bi-search"></i></a></li>
+                        <!-- Modal -->
+                        <div id="searchModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Faça uma busca</h2>
+                                <br>
+                                <input type="text" placeholder="O que seu pet precisa? ">
+                                <button>Buscar</button>
+                            </div>
+                        </div>
+
                         <li><a href="#"><i class="bi bi-person"></i></a></li>
                         <li><a href="#"><i class="bi bi-cart3"></i></a></li>
                     </div>
@@ -405,6 +416,7 @@
         <a href="#" class="button-top"></a>
     <script src="assets/js/menu.js"></script> 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
 
     <script>
         $(document).ready(function(){
