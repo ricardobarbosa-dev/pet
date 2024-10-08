@@ -353,12 +353,22 @@ section.products .product {
     width: 30rem;
     height: 50rem;
     margin: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+section.products .product:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
 }
 
 section.products .product-img {
-    max-width: 100%;
+    width: 100%;
     height: auto; 
-    margin-bottom: 1rem; 
+    margin-bottom: 2rem; 
+    border-bottom: 1px solid #ccc;
 }
 
 section.products h3 {
@@ -378,6 +388,7 @@ section.products p {
 }
 section.products a:hover {
     opacity: 0.8;
+    transition: all 0.3s;
 }
 section.products a button {
     background-color: var(--background-border);
@@ -598,6 +609,9 @@ section.footer a:hover {
     header nav ul {
         flex-direction: row;
         padding-bottom: 0;
+    }
+    header .banner {
+        font-size: 1.7rem;
     }
     section.advantages {
         display: flex;
