@@ -552,6 +552,11 @@ section.footer > h3 {
 
 .category-footer {
     background-color: var(--background-secondary);
+    background-image: url(../images/footer-decor.svg);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 12;
     display: flex;
     justify-content: center;
     flex-direction: column;
